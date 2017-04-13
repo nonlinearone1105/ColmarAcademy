@@ -1,0 +1,208 @@
+html {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Text styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.banner a {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+
+.card-text a {
+  display: block;
+  padding: 2rem 0;
+  font-size: 1rem;
+  color: cornflowerblue;
+}
+
+/* Header styling */
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-family: "Nunito Sans";
+  font-size: 1.5rem;
+}
+
+.logo span:first-of-type {
+  font-weight: bold;
+  color: black;
+}
+
+.logo span:last-child {
+  color: silver;
+  font-weight: 300;
+}
+
+nav span {
+  margin-right: 1rem;
+}
+
+/* Common margin/padding and background color stylings */
+.padding-top {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding-side {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.gray-bg {
+  background-color: silver;
+}
+
+.big-column {
+  width: 60%;
+}
+
+.small-column {
+  width: 40%;
+}
+
+.big-image {
+  width: 100%;
+}
+
+.flex-horizontal {
+  display: flex;
+}
+
+.flex-verticle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner styling */
+.banner-text h1, .banner-text h2, .banner-text a {
+  margin-right: 8rem;
+}
+
+.banner-text {
+  justify-content: center;
+}
+
+/* Learning styling */
+.cards {
+  border-left: 1px solid silver;
+}
+
+.card-image {
+  width: 35%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-text {
+  width: 65%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  justify-content: flex-start;
+}
+
+.card1 {
+  padding-top: 1rem;
+  border-bottom: 1px solid silver;
+}
+
+/* Courses styling */
+.heading {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.course {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 25%;
+  padding-bottom: 0.5rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-image, .course-text {
+  background-color: white;
+}
+
+.course-text {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+#art {
+  padding-bottom: 1rem;
+}
+
+/* Thesis styling */
+video {
+  width: 100%;
+}
+
+.video-text {
+  padding-top: 1.5rem;
+}
+
+/* Footer styling */
+footer {
+  border-top: 1px solid silver;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  justify-content: space-between;
+}
