@@ -4,18 +4,99 @@ html {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* Text styling */
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+/* Hide desktop only elements */
+.header-desktop, .practice, .practice-image, .practice-text, .cards-desktop, .learning-desktop, .secondary, .video-text, footer nav {
+  display: none;
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+/* General formatting styling */
+  /* Background color */
+  .gray-bg {
+    background-color: silver;
+  }
+
+  /* Padding */
+  .pad-top-2 {
+    padding-top: 2rem;
+  }
+
+  .pad-bot-2 {
+    padding-bottom: 2rem;
+  }
+
+  .pad-top-15 {
+    padding-top: 1.5rem;
+  }
+
+  .pad-r-15 {
+    padding-right: 1.5rem;
+  }
+
+  .pad-bot-15 {
+    padding-bottom: 1.5rem;
+  }
+
+  .pad-l-15 {
+    padding-left: 1.5rem;
+  }
+
+  .pad-top-1 {
+    padding-top: 1rem;
+  }
+
+  .pad-r-1 {
+    padding-right: 1rem;
+  }
+
+  .pad-bot-1 {
+    padding-bottom: 1rem;
+  }
+
+  .pad-l-1 {
+    padding-left: 1rem;
+  }
+
+  .pad-bot-5 {
+    padding-bottom: 0.5rem;
+  }
+
+  /* Flex */
+  .flex-horizontal {
+    display: flex;
+  }
+
+  .flex-verticle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Text */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .card-image img, .banner-image img, video {
+    width: 100%;
+  }
+
+/* Header section styling */
+.header-mobile {
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
 }
+
+/* Banner section styling */
 
 .banner a {
   background-color: rgba(0, 0, 0, 0.7);
@@ -27,182 +108,174 @@ h2 {
   font-size: 1rem;
 }
 
-h4 {
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-h5 {
-  font-size: 0.75rem;
-  padding-top: 2rem;
-}
+/* Information section styling */
 
 .card-text a {
-  display: block;
-  padding: 2rem 0;
-  font-size: 1rem;
   color: cornflowerblue;
 }
 
-/* Header styling */
-header {
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Courses section styling */
+.learning-mobile {
+  border: 1px solid silver;
 }
 
-header .logo {
-  padding-left: 1.5rem;
-  display: flex;
-  align-items: center;
-}
+@media only screen and (min-width: 470px) {
+  /* Hide mobile only elements */
+  .header-mobile, .cards-mobile, .learning-mobile {
+    display: none;
+  }
 
-.logo img {
-  height: 50px;
-}
+  /* Display desktop only elements */
+  .show {
+    display: block;
+  }
 
-.logo span {
-  font-family: "Nunito Sans";
-  font-size: 1.5rem;
-}
+  /* Display and alignment styling */
+  .flex-h {
+    display: flex;
+  }
 
-.logo span:first-of-type {
-  font-weight: bold;
-  color: black;
-}
+  .flex-v {
+    display: flex;
+    flex-direction: column;
+  }
 
-.logo span:last-child {
-  color: silver;
-  font-weight: 300;
-}
+  .justify-bet {
+    justify-content: space-between;
+  }
 
-nav span {
-  margin-right: 1rem;
-}
+  .justify-c {
+    justify-content: center;
+  }
 
-/* Common margin/padding and background color stylings */
-.padding-top {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+  .align-c {
+    align-items: center;
+  }
 
-.padding-side {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
+  .wrap {
+    flex-wrap: wrap;
+  }
 
-.gray-bg {
-  background-color: silver;
-}
+  .pad-b-4 {
+    padding-bottom: 4rem;
+  }
 
-.big-column {
-  width: 60%;
-}
+  .pad-t-2 {
+    padding-top: 2rem;
+  }
 
-.small-column {
-  width: 40%;
-}
+  .pad-ri-2 {
+    padding-right: 2rem;
+  }
 
-.big-image {
-  width: 100%;
-}
+  .pad-b-2 {
+    padding-bottom: 2rem;
+  }
 
-.flex-horizontal {
-  display: flex;
-}
+  .pad-le-2 {
+    padding-left: 2rem;
+  }
 
-.flex-verticle {
-  display: flex;
-  flex-direction: column;
-}
+  .pad-t-15 {
+    padding-top: 1.5rem;
+  }
 
-/* Banner styling */
-.banner-text h1, .banner-text h2, .banner-text a {
-  margin-right: 8rem;
-}
+  .pad-ri-15 {
+    padding-right: 1.5rem;
+  }
 
-.banner-text {
-  justify-content: center;
-}
+  .pad-b-15 {
+    padding-bottom: 1.5rem;
+  }
 
-/* Learning styling */
-.cards {
-  border-left: 1px solid silver;
-}
+  .pad-le-15 {
+    padding-left: 1.5rem;
+  }
 
-.card-image {
-  width: 35%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+  .pad-t-1 {
+    padding-top: 1rem;
+  }
 
-.card-image img {
-  width: 100%;
-}
+  .pad-ri-1 {
+    padding-right: 1rem;
+  }
 
-.card-text {
-  width: 65%;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  justify-content: flex-start;
-}
+  .pad-b-1 {
+    padding-bottom: 1rem;
+  }
 
-.card1 {
-  padding-top: 1rem;
-  border-bottom: 1px solid silver;
-}
+  .pad-le-1 {
+    padding-left: 1rem;
+  }
 
-/* Courses styling */
-.heading {
-  text-align: center;
-  padding-top: 2rem;
-}
+  .pad-b-5 {
+    padding-bottom: 0.5rem;
+  }
 
-.courses {
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
+  .big-column {
+    max-width: calc(60% - 48px);
+  }
 
-.course {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 25%;
-  padding-bottom: 0.5rem;
-}
+  .small-column {
+    max-width: calc(35% - 32px);
+  }
 
-.course img {
-  width: 100%;
-}
+  .practice-image img, .card-image img, .course-image img {
+    width: 100%;
+  }
 
-.course-image, .course-text {
-  background-color: white;
-}
+  /* Text styling */
+  h4 {
+    font-size: 1rem;
+  }
 
-.course-text {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 2rem;
-}
+  h5 {
+    font-size: 0.75rem;
+  }
 
-#art {
-  padding-bottom: 1rem;
-}
+  /* Header section styling */
+  .header-desktop {
+    height: 4rem;
+  }
 
-/* Thesis styling */
-video {
-  width: 100%;
-}
+  .logo img {
+    height: 50px;
+  }
 
-.video-text {
-  padding-top: 1.5rem;
-}
+  .logo span {
+    font-family: "Nunito Sans";
+    font-size: 1.5rem;
+  }
 
-/* Footer styling */
-footer {
-  border-top: 1px solid silver;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-  justify-content: space-between;
+  .logo span:first-of-type {
+    font-weight: bold;
+    color: black;
+  }
+
+  .logo span:last-child {
+    color: silver;
+    font-weight: 300;
+  }
+
+  /* Information section styling */
+  .cards-desktop {
+    border-left: 1px solid silver;
+  }
+
+  .cards-desktop .card2 {
+    border-top: 1px solid silver;
+  }
+
+  .course {
+    width: 25%;
+  }
+
+  .course-text {
+    background-color: white;
+  }
+
+  /* Footer styling */
+  footer {
+    border-top: 1px solid silver;
+  }
 }

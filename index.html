@@ -10,197 +10,275 @@
 
   <body>
     <!--Header with logo and navigation bar-->
-    <header>
-      <div class="logo">
+    <header class="header-desktop flex-h justify-bet align-c">
+      <div class="logo flex-h align-c pad-l-15">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"/>
         <span>COLMAR</span>
         <span>ACADEMY</span>
       </div>
       <nav>
-        <span>On campus</span>
-        <span>Online</span>
-        <span>For companies</span>
-        <span>Sign in</span>
+        <span class="pad-r-1">On campus</span>
+        <span class="pad-r-1">Online</span>
+        <span class="pad-r-1">For companies</span>
+        <span class="pad-r-1">Sign in</span>
       </nav>
     </header>
 
+    <header class="header-mobile">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"/>
+      <img src="./resources/images/ic-on-campus.svg" alt="On campus"/>
+      <img src="./resources/images/ic-online.svg" alt="Online"/>
+      <img src="./resources/images/ic-login.svg" alt="Login"/>
+    </header>
+
     <!--Banner-->
-    <div class="banner gray-bg flex-horizontal" role="presentation">
-      <div class="banner-image padding-top padding-side big-column" role="presentation">
+    <div class="banner gray-bg flex-h pad-t-2 pad-bot-2 pad-le-15" role="presentation">
+      <div class="banner-image big-column pad-ri-15" role="presentation">
         <img src="./resources/images/banner.jpg" alt="Students studying" class="big-image"/>
       </div>
-      <div class="banner-text small-column flex-verticle" role="presentation">
+      <div class="banner-text pad-top-2 pad-bot-2 pad-l-1 pad-r-1" role="presentation">
         <div role="presentation">
-          <h1 role="presentation">Learn something new every day</h1>
+          <h1 class="pad-bot-2" role="presentation">Learn something new every day</h1>
         </div>
         <div role="presentation">
-          <h2 role="presentation">Lorem ipsom dolor sit amet, consectetur adipiscing elit.</h2>
+          <h2 class="pad-bot-15" role="presentation">Lorem ipsom dolor sit amet, consectetur adipiscing elit.</h2>
         </div>
-        <div role="presentation">
+        <div class="button-container" role="presentation">
           <a href="#" class="button">Start here</a>
         </div>
       </div>
     </div>
 
     <!--School information-->
-    <div class="information flex-horizontal" role="presentation">
-      <div class="pratice big-column padding-top padding-side" role="presentation">
-        <div class="practice-image" role="presentation">
-          <img src="./resources/images/information-main.jpg" alt="Man reading" class="big-image"/>
+    <div class="information flex-h pad-le-15 pad-l-1" role="presentation">
+      <div class="pratice show big-column pad-t-2 pad-ri-15 pad-b-2" role="presentation">
+        <div class="practice-image show pad-b-2" role="presentation">
+          <img src="./resources/images/information-main.jpg" alt="Man reading"/>
         </div>
-        <div class="practice-text padding-top" role="presentation">
-          <h1 role="presentation">It doesn't hurt to keep practicing.</h1>
-          <h4 role="presentation">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristeque ligula."</h4>
+        <div class="practice-text show pad-le-15" role="presentation">
+          <h1 class="pad-b-15" role="presentation">It doesn't hurt to keep practicing.</h1>
+          <h4 class="pad-b-2" role="presentation">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristeque ligula."</h4>
           <h5 role="presentation">Emanuel, Sr Strategist at Hiring.com</h5>
         </div>
       </div>
-      <div class="cards small-column flex-verticle" role="presentation">
-        <div class="card1 padding-side flex-horizontal" role="presentation">
-          <div class="card-image" role="presentation">
+
+      <!--Desktop versions of information cards -->
+      <div class="cards-desktop show pad-t-2" role="presentation">
+        <div class="card1 flex-h pad-b-1 pad-le-1" role="presentation">
+          <div class="card-image small-column" role="presentation">
             <img src="./resources/images/information-orientation.jpg" alt="Students walking"/>
           </div>
-          <div class="card-text" role="presentation">
-            <h2 role="presentation">Orientation Date</h2>
-            <h4 role="presentation">Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+          <div class="card-text pad-l-1" role="presentation">
+            <h2 class="pad-bot-5" role="presentation">Orientation Date</h2>
+            <h4 class="pad-bot-5" role="presentation">Tue 10/11 & Wed 10/12: 8am-3pm</h4>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="card2 padding-side flex-horizontal" role="presentation">
-          <div class="card-image" role="presentation">
+        <div class="card2 flex-h pad-t-1 pad-b-1 pad-le-1" role="presentation">
+          <div class="card-image small-column" role="presentation">
             <img src="./resources/images/information-campus.jpg" alt="Cafe"/>
           </div>
-          <div class="card-text" role="presentation">
-            <h2 role="presentation">Our campus</h2>
-            <h4 role="presentation">Find which campus is close by you</h4>
+          <div class="card-text pad-le-1" role="presentation">
+            <h2 class="pad-b-5" role="presentation">Our campus</h2>
+            <h4 class="pad-b-5" role="presentation">Find which campus is close by you</h4>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="card3 padding-side flex-horizontal gray-bg" role="presentation">
-          <div class="card-image" role="presentation">
+        <div class="card3 gray-bg flex-h pad-t-1 pad-b-1 pad-le-1" role="presentation">
+          <div class="card-image small-column" role="presentation">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack"/>
           </div>
-          <div class="card-text" role="presentation">
-            <h2 role="presentation">Our guest lecture</h2>
-            <h4 role="presentation">Join a keynote with Oliver Sack about music in medical treatment</h4>
+          <div class="card-text pad-le-1" role="presentation">
+            <h2 class="pad-b-5" role="presentation">Our guest lecture</h2>
+            <h4 class="pad-b-5" role="presentation">Join a keynote with Oliver Sack about music in medical treatment</h4>
             <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Mobile versions of information cards-->
+      <div class="cards-mobile pad-top-1 pad-r-1 pad-bot-1 flex-verticle" role="presentation">
+        <div class="card1" role="presentation">
+          <div class="card-image" role="presentation">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="Students walking"/>
+          </div>
+          <div class="card-text pad-top-1 pad-l-1" role="presentation">
+            <h2 class="pad-bot-5" role="presentation">Orientation Date</h2>
+            <h4 class="pad-bot-5" role="presentation">Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+            <a class="pad-bot-2" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="card2" role="presentation">
+          <div class="card-image pad-top-1" role="presentation">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="Cafe"/>
+          </div>
+          <div class="card-text pad-top-1 pad-l-1" role="presentation">
+            <h2 class="pad-bot-5" role="presentation">Our campus</h2>
+            <h4 class="pad-bot-5" role="presentation">Find which campus is close by you</h4>
+            <a class="pad-bot-2" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="card3" role="presentation">
+          <div class="card-image pad-top-1" role="presentation">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack"/>
+          </div>
+          <div class="card-text pad-top-1 pad-l-1" role="presentation">
+            <h2 class="pad-bot-5" role="presentation">Our guest lecture</h2>
+            <h4 class="pad-bot-5" role="presentation">Join a keynote with Oliver Sack about music in medical treatment</h4>
+            <a class="pad-bot-2" href="#">Read more</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!--Courses-->
-    <div class="learning gray-bg flex-verticle" role="presentation">
+    <!--Desktop version of Courses-->
+    <div class="learning-desktop show gray-bg pad-b-2" role="presentation">
       <div class="heading" role="presentation">
-        <h1>Start learning</h1>
+        <h1 class="center pad-top-2 pad-bot-2">Start learning</h1>
       </div>
-      <div class="courses flex-horizontal" role="presentation">
+      <div class="courses flex-h wrap justify-c" role="presentation">
         <!--Software engineering-->
-        <div class="course" role="presentation">
+        <div class="course pad-ri-2 pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-software.jpg" alt="Computers"/>
           </div>
-          <div class="course-text" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-2 pad-le-1" role="presentation">
             <h2 role="presentation">Software engineering</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">Web Development, Mobile Development, iOT, APIs</h4>
           </div>
         </div>
 
         <!--Computer Art-->
-        <div class="course" role="presentation">
+        <div class="course pad-ri-2 pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-computer-art.jpg" alt="Cell phone"/>
           </div>
-          <div class="course-text" id="art" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-1 pad-le-1" role="presentation">
             <h2 role="presentation">Computer Art</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h4>
           </div>
         </div>
 
         <!--Design-->
-        <div class="course" role="presentation">
+        <div class="course pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-design.jpg" alt="Camera"/>
           </div>
-          <div class="course-text" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-2 pad-le-1" role="presentation">
             <h2 role="presentation">Design</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">User Experience Design, User Research, Visual Design</h4>
           </div>
         </div>
 
         <!--Data-->
-        <div class="course" role="presentation">
+        <div class="course pad-ri-2 pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-data.jpg" alt="Laptop"/>
           </div>
-          <div class="course-text" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-15 pad-le-1" role="presentation">
             <h2 role="presentation">Data</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">Data Science, Big Data, SQL, Data Visualization</h4>
           </div>
         </div>
 
         <!--Business-->
-        <div class="course" role="presentation">
+        <div class="course pad-ri-2 pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-business.jpg" alt="Chess"/>
           </div>
-          <div class="course-text" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-15 pad-le-1" role="presentation">
             <h2 role="presentation">Business</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">Product Development, Business Development, Startup</h4>
           </div>
         </div>
 
         <!--Marketing-->
-        <div class="course" role="presentation">
+        <div class="course pad-b-1" role="presentation">
           <div class="course-image" role="presentation">
             <img src="./resources/images/course-marketing.jpg" alt="Apple Watch"/>
           </div>
-          <div class="course-text" role="presentation">
+          <div class="course-text pad-t-1 pad-ri-1 pad-b-15 pad-le-1" role="presentation">
             <h2 role="presentation">Marketing</h2>
-            <h4 role="presentation">COURSES</h4>
+            <h4 class="pad-t-1 pad-b-5" role="presentation">COURSES</h4>
             <h4 role="presentation">Analytics, Content Marketing, Mobile Marketing</h4>
           </div>
         </div>
       </div>
     </div>
 
+    <!--Mobile version of Courses-->
+    <div class="learning-mobile pad-top-2 pad-bot-2 pad-r-1 pad-l-1" role="presentation">
+      <div class="heading center" role="presentation">
+        <h1 class="pad-bot-2">Start learning</h1>
+      </div>
+
+      <div class="courses" role="presentation">
+        <!--Software Engineering-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Software Engineering</h2>
+        </div>
+        <!--Computer Art-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Computer Art</h2>
+        </div>
+        <!--Design-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Design</h2>
+        </div>
+        <!--Data-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Data</h2>
+        </div>
+        <!--Business-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Business</h2>
+        </div>
+        <!--Marketing-->
+        <div class="course pad-bot-5">
+          <h2 class="pad-top-1 pad-bot-1 pad-l-1 gray-bg">Marketing</h2>
+        </div>
+      </div>
+    </div>
+
+    <!--Theses exhibit-->
     <div class="exhibit" role="presentation">
       <div class="heading" role="presentation">
-        <h1>Thesis exhibit</h1>
+        <h1 class="pad-top-2 pad-bot-2 center">Thesis exhibit</h1>
       </div>
-      <div class="theses flex-horizontal" role="presentation">
-        <div class="main big-column padding-side" role="presentation">
-          <div class="video">
+      <div class="theses pad-ri-1 pad-le-15 flex-h" role="presentation">
+        <div class="main big-column" role="presentation">
+          <div class="video pad-bot-15">
             <video controls>
               <source src="./resources/videos/thesis.mp4" type="video/mp4" alt="Video of Reimagine Urban thesis"/>
               Your browser does not support this HTML5 video tag.
             </video>
           </div>
-          <div class="video-text" role="presentation">
-            <h2 role="presentation">Reimagine urban</h2>
+          <div class="video-text show pad-b-2" role="presentation">
+            <h2 class="pad-b-1" role="presentation">Reimagine urban</h2>
             <h4 role="presentation">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristeque ligula."</h4>
           </div>
         </div>
-        <div class="secondary small-column flex-verticle" role="presentation">
-          <div class="thesis gray-bg flex-horizontal padding-side" role="presentation">
-            <div class="card-image" role="presentation">
+        <div class="secondary show" role="presentation">
+          <div class="thesis flex-h gray-bg pad-le-1" role="presentation">
+            <div class="card-image small-column pad-t-1 pad-b-1" role="presentation">
               <img src="./resources/images/thesis-fisma.jpg" alt="Highlighted studying materials."/>
             </div>
-            <div class="card-text" role="presentation">
-              <h2 role="presentation">Fisma: Design and</h2>
+            <div class="card-text flex-v justify-c pad-le-1" role="presentation">
+              <h2 class="pad-b-1" role="presentation">Fisma: Design and</h2>
               <h4 role="presentation">Designer showcase of new prototype product</h4>
             </div>
           </div>
-          <div class="thesis flex-horizontal padding-side" role="presentation">
-            <div class="card-image" role="presentation">
+          <div class="thesis flex-h pad-le-1" role="presentation">
+            <div class="card-image small-column pad-t-1 pad-b-1" role="presentation">
               <img src="./resources/images/thesis-now-and-then.jpg" alt="Skyscraper"/>
             </div>
-            <div class="card-text" role="presentation">
-              <h2 role="presentation">Now and then</h2>
+            <div class="card-text flex-v justify-c pad-le-1" role="presentation">
+              <h2 class="pad-b-1" role="presentation">Now and then</h2>
               <h4 role="presentation">Research study about New York</h4>
             </div>
           </div>
@@ -208,12 +286,13 @@
       </div>
     </div>
 
-    <footer class="padding-side flex-horizontal">
+    <!--Footer-->
+    <footer class="flex-h justify-bet pad-top-1 pad-t-15 pad-ri-15 pad-bot-1 pad-b-4 pad-l-1 pad-le-15">
       <div class="copyright">
-        <span>&copy 2016 Colmar Academy. All rights reserved.</span>
+        <span>&copy 2016 Colmar Academy. All rights reserved.<span>
       </div>
-      <nav>
-        <span>Terms</span>
+      <nav class="show">
+        <span class="pad-ri-1">Terms</span>
         <span>Privacy</span>
       </nav>
     </footer>
